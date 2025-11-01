@@ -116,7 +116,7 @@ const Shopping = () => {
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
             Join our WhatsApp channel to receive exclusive discount codes, flash sale alerts, and personalized shopping recommendations.
           </p>
-          <Badge variant="outline" className="text-lg px-6 py-2 border-secondary text-secondary">
+          <Badge variant="outline" className="text-lg px-6 py-2 border-secondary text-secondary text-white">
             Join WhatsApp for Deal Codes
           </Badge>
         </div>

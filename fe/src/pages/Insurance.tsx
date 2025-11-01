@@ -127,15 +127,15 @@ const Insurance = () => {
             <h2 className="text-3xl font-bold mb-4">Why Choose Our Insurance Services?</h2>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="p-6 bg-card rounded-lg border border-accent/20">
-                <h3 className="font-semibold mb-2 text-accent">Expert Guidance</h3>
+                <h3 className="font-semibold mb-2 text-accent  text-white">Expert Guidance</h3>
                 <p className="text-sm text-muted-foreground">Get personalized recommendations from insurance experts</p>
               </div>
               <div className="p-6 bg-card rounded-lg border border-accent/20">
-                <h3 className="font-semibold mb-2 text-accent">Compare Plans</h3>
+                <h3 className="font-semibold mb-2 text-accent text-white">Compare Plans</h3>
                 <p className="text-sm text-muted-foreground">Compare policies from top insurers in one place</p>
               </div>
               <div className="p-6 bg-card rounded-lg border border-accent/20">
-                <h3 className="font-semibold mb-2 text-accent">Quick Processing</h3>
+                <h3 className="font-semibold mb-2 text-accent text-white">Quick Processing</h3>
                 <p className="text-sm text-muted-foreground">Fast policy issuance with minimal documentation</p>
               </div>
             </div>

@@ -9,7 +9,8 @@ const FreeLearning = () => {
       title: "Stock Market Fundamentals",
       icon: TrendingUp,
       description: "Learn the basics of stock market investing, understanding market trends, and making informed decisions.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      // videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/embed/MwJZdLG2s2w",
       keyPoints: [
         "Understanding stock exchanges",
         "Reading stock charts and patterns",
@@ -21,7 +22,7 @@ const FreeLearning = () => {
       title: "Investment Basics",
       icon: Target,
       description: "Master the fundamentals of investment planning, portfolio diversification, and long-term wealth building.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/embed/IR3di3OHeTs",
       keyPoints: [
         "Investment planning strategies",
         "Portfolio diversification",
@@ -33,7 +34,7 @@ const FreeLearning = () => {
       title: "Trading Techniques",
       icon: LineChart,
       description: "Advanced trading strategies, technical analysis, and practical tips for active traders.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      videoUrl: "https://www.youtube.com/embed/ZU6yPCaXtKA",
       keyPoints: [
         "Technical analysis fundamentals",
         "Chart patterns and indicators",
