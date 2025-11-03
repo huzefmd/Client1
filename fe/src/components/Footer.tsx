@@ -1,5 +1,5 @@
 import { Mail, Youtube, Facebook, Instagram } from "lucide-react";
-import qrCode from "@/assets/qr-placeholder.jpg";
+import qrCode from "@/assets/qr.jpeg";
 
 const Footer = () => {
   return (

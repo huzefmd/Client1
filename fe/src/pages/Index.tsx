@@ -4,8 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CategoryCard from "@/components/CategoryCard";
 import heroBackground from "@/assets/hero-bg.jpg";
-import qrCode from "@/assets/qr-placeholder.jpg";
+// import qrCode from "@/assets/qr-placeholder.jpg";
 import { Button } from "@/components/ui/button";
+import qrCode from "@/assets/qr.jpeg"
 
 const Index = () => {
   const categories = [
@@ -42,9 +43,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
-      <section 
+      <section
         className="relative pt-24 pb-20 overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url(${heroBackground})`,
@@ -68,7 +69,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <a href="#qr-section">
+              <a href="https://whatsapp.com/channel/0029VaTSXv865yDLKWr6f80L">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
                   Join WhatsApp Channel
                 </Button>
@@ -87,7 +88,17 @@ const Index = () => {
               Scan the QR code to join our WhatsApp channel and get instant updates on new learning resources, exclusive deals, and financial tips.
             </p>
             <div className="inline-block p-8 bg-gradient-to-br from-white/5 to-white/10 rounded-2xl border border-white/20 animate-glow">
-              <img src={qrCode} alt="WhatsApp QR Code" className="w-64 h-64 mx-auto rounded-xl" />
+
+              <a href="https://whatsapp.com/channel/0029VaTSXv865yDLKWr6f80L"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                <img src={qrCode} alt="WhatsApp QR Code" className="w-64 h-64 mx-auto rounded-xl" />
+
+              </a>
+
+
               <p className="mt-4 text-sm font-medium text-white">Scan to Connect Instantly</p>
             </div>
           </div>
@@ -103,7 +114,7 @@ const Index = () => {
               Everything you need to make smart financial decisions, all in one place.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {categories.map((category, index) => (
               <div key={category.title} className="animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
