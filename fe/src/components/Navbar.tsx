@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: "Shopping", path: "/shopping" },
     { name: "Insurance", path: "/insurance" },
     { name: "Finance", path: "/finance" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

@@ -59,7 +59,7 @@ const Insurance = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       <section className="pt-24 pb-12 bg-gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
@@ -79,8 +79,8 @@ const Insurance = () => {
             {insuranceTypes.map((insurance, index) => {
               const Icon = insurance.icon;
               return (
-                <Card 
-                  key={insurance.title} 
+                <Card
+                  key={insurance.title}
                   className="overflow-hidden border-gray-200 bg-white shadow-sm hover:shadow-xl transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 120}ms` }}
                 >
@@ -110,9 +110,12 @@ const Insurance = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-black hover:bg-gray-800 text-white">
-                      Get Free Quote
-                    </Button>
+                    <a href=" https://whatsapp.com/channel/0029VaTSXv865yDLKWr6f80L">
+                      <Button className="w-full bg-black hover:bg-gray-800 text-white">
+                        Get Free Quote
+                      </Button>
+                    </a>
+
                   </CardContent>
                 </Card>
               );
