@@ -80,6 +80,27 @@ const Index = () => {
       </section>
 
       {/* QR Code Section */}
+
+
+      {/* Categories Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-4">Explore Our Services</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Everything you need to make smart financial decisions, all in one place.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {categories.map((category, index) => (
+              <div key={category.title} className="animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
+                <CategoryCard {...category} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="qr-section" className="py-16 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-slide-up">
@@ -101,26 +122,6 @@ const Index = () => {
 
               <p className="mt-4 text-sm font-medium text-white">Scan to Connect Instantly</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Categories Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-4">Explore Our Services</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to make smart financial decisions, all in one place.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {categories.map((category, index) => (
-              <div key={category.title} className="animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <CategoryCard {...category} />
-              </div>
-            ))}
           </div>
         </div>
       </section>
