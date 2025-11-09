@@ -1,5 +1,6 @@
-import Navbar from '@/components/Navbar'
-import React from 'react'
+import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+import React from "react";
 
 function Jobs() {
     return (
@@ -11,15 +12,15 @@ function Jobs() {
                     We’re working hard to bring you the best online job opportunities.
                     Stay tuned — this page will be live soon!
                 </p>
-                <a href="/contact">
+
+                <Link to="/contact">
                     <button className="mt-6 px-6 py-3 bg-white text-black rounded-xl hover:bg-gray-200 transition">
                         Notify Me
                     </button>
-                </a>
-
+                </Link>
             </div>
         </div>
-    )
+    );
 }
 
-export default Jobs
+export default Jobs;
