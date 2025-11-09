@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 interface FormData {
     name: string;
     email: string;
+    phone: string;
     message: string;
 }
 
@@ -13,6 +14,7 @@ const Contact: React.FC = () => {
     const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
+        phone:"",
         message: "",
     });
 
@@ -35,14 +37,14 @@ const Contact: React.FC = () => {
         setStatus({ type: null, message: "" });
 
         const SERVICE_ID = "service_w16pxlt";
-        const TEMPLATE_ID = "template_8lxfhbk";
+        const TEMPLATE_ID = "template_nej2sih";
         const PUBLIC_KEY = "1m9E5lm2Sjfv1Cwzd";
 
         emailjs
             .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
             .then(() => {
                 setStatus({ type: "success", message: "✅ Message sent successfully!" });
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ name: "", email: "",phone :"", message: "" });
             })
             .catch((error) => {
                 console.error("EmailJS Error:", error);
@@ -88,6 +90,20 @@ const Contact: React.FC = () => {
                         type="email"
                         name="email"
                         value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none text-black"
+                    />
+                </div>
+
+                <div>
+                    <label className="block text-sm font-medium text-gray-600 mb-1">
+                        Phone
+                    </label>
+                    <input
+                        type="phone"
+                        name="phone"
+                        value={formData.phone}
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none text-black"
