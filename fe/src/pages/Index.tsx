@@ -1,4 +1,4 @@
-import { BookOpen, ShoppingCart, Shield, Wallet, ArrowRight } from "lucide-react";
+import { BookOpen, ShoppingCart, Shield, Wallet, ArrowRight, CircleDollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -38,6 +38,13 @@ const Index = () => {
       link: "/finance",
       gradient: "primary" as const,
     },
+    {
+      title: "Online Jobs",
+      description: "Find the best online income sources—from part-time gigs to full-time remote jobs. Start working and earning today.",
+      icon: CircleDollarSign,
+      link: "/jobs",
+      gradient: "primary" as const,
+    },
   ];
 
   return (
@@ -46,7 +53,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section
-        className="relative pt-24 pb-20 overflow-hidden"
+        className="relative pt-24 pb-20 overflow-hidden "
         style={{
           backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), url(${heroBackground})`,
           backgroundSize: 'cover',
