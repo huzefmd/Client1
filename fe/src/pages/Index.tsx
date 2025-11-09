@@ -62,19 +62,7 @@ const Index = () => {
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
               Free resources on finance, insurance, shopping discounts, and investment. Join thousands learning smarter every day.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/learning">
-                <Button size="lg" className="bg-white hover:bg-white/90 text-black group">
-                  Start Learning Free
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <a href="https://whatsapp.com/channel/0029VaTSXv865yDLKWr6f80L">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
-                  Join WhatsApp Channel
-                </Button>
-              </a>
-            </div>
+
           </div>
         </div>
       </section>
@@ -98,6 +86,19 @@ const Index = () => {
                 <CategoryCard {...category} />
               </div>
             ))}
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+            <Link to="/learning">
+              <Button size="lg" className="bg-white hover:bg-white/90 text-black group">
+                Start Learning Free
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <a href="https://whatsapp.com/channel/0029VaTSXv865yDLKWr6f80L">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                Join WhatsApp Channel
+              </Button>
+            </a>
           </div>
         </div>
       </section>
