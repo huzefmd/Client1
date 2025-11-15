@@ -1,4 +1,4 @@
-import { Car, HomeIcon, User, CreditCard } from "lucide-react";
+import { Car, HomeIcon, User, CreditCard, ChartCandlestick } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,16 +7,17 @@ import { Button } from "@/components/ui/button";
 const Finance = () => {
   const financeOptions = [
     {
-      title: "Vehicle Loan",
-      icon: Car,
-      description: "Get your dream vehicle with easy EMI options and competitive interest rates",
+      title: "Open a free demat account",
+      icon: ChartCandlestick,
+      description: "Open a free demat account with Zerodha and start investing in stocks, derivatives, mutual funds, ETFs, bonds, IPOs, and more",
       features: [
-        "Interest rates from 7.5% p.a.",
-        "Loan amount up to ₹50 lakhs",
-        "Flexible tenure up to 7 years",
-        "Quick approval in 48 hours"
+        "₹0 charges for equity delivery",
+        "Fast & paperless online account opening",
+        "Access to stocks, mutual funds, IPOs, and ETFs in one platform",
+        "Advanced trading tools like Kite and Console",
       ],
-      processingFee: "₹999 onwards"
+      processingFee: "₹0 Account Opening Fee",
+      url:"https://zerodha.com/open-account?c=OD3729"
     },
     {
       title: "Home Loan",
@@ -110,9 +111,17 @@ const Finance = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button className="w-full bg-black hover:bg-gray-800 text-white">
-                      Apply Now
-                    </Button>
+                    <a
+                      href={option.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full block"
+                    >
+                      <Button className="w-full bg-black hover:bg-gray-800 text-white">
+                        Apply Now
+                      </Button>
+                    </a>
+
                   </CardContent>
                 </Card>
               );
