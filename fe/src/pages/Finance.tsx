@@ -1,7 +1,7 @@
-import { Car, HomeIcon, User, CreditCard, ChartCandlestick } from "lucide-react";
+import { Car, HomeIcon, User, CreditCard, ChartCandlestick, IndianRupee } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle,  } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const Finance = () => {
@@ -32,29 +32,34 @@ const Finance = () => {
       processingFee: "₹1,999 onwards"
     },
     {
-      title: "Personal Loan",
-      icon: User,
-      description: "Instant personal loans for any purpose with minimal documentation",
+      title: "Google pay",
+      icon: IndianRupee,
+      description: "Download Google Pay and make fast, secure UPI payments, recharge, bill payments, and money transfers with ease.",
       features: [
-        "Interest rates from 10.5% p.a.",
-        "Loan amount up to ₹40 lakhs",
-        "Tenure up to 5 years",
-        "No collateral required"
+        "Instant UPI money transfers",
+        "Recharge mobile, DTH & pay bills",
+        "Fast & secure transactions",
+        "Rewards & scratch cards",
       ],
-      processingFee: "₹499 onwards"
+      processingFee: "Free to Download",
+      url:"https://pay.google.com/gp/promo/p_referrals/?referrer_id=Q58Px",
     },
     {
-      title: "Credit Card",
-      icon: CreditCard,
-      description: "Apply for premium credit cards with exclusive rewards and benefits",
+      title: "PhonePe",
+      icon: IndianRupee,
+      description: "Download PhonePe for secure UPI payments, mobile recharge, bill payments, insurance, and money transfers within seconds.",
       features: [
-        "Lifetime free cards available",
-        "Rewards on every purchase",
-        "Travel and dining benefits",
-        "Easy EMI conversion"
+        "Instant UPI money transfers",
+        "Mobile, DTH, and utility bill payments",
+        "Secure QR code payments everywhere",
+        "Recharge, FASTag, and insurance services",
+
       ],
-      processingFee: "Free"
+      processingFee: "Free to Download",
+      url: " https://phon.pe/e0w8e4rh",
+
     }
+
   ];
 
   return (
