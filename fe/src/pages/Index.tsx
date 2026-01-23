@@ -7,6 +7,8 @@ import heroBackground from "@/assets/hero-bg.jpg";
 // import qrCode from "@/assets/qr-placeholder.jpg";
 import { Button } from "@/components/ui/button";
 import qrCode from "@/assets/qr.jpeg"
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
 
 const Index = () => {
   const categories = [
@@ -150,6 +152,7 @@ const Index = () => {
       </section>
 
       <Footer />
+      <WhatsAppFloat/>
     </div>
   );
 };
