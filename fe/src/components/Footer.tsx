@@ -1,5 +1,7 @@
 import { Mail, Youtube, Facebook, Instagram } from "lucide-react";
 import qrCode from "@/assets/qr.jpeg";
+import instaQr from "@/assets/instaa.png";
+
 
 const Footer = () => {
   return (
@@ -32,13 +34,30 @@ const Footer = () => {
           </div>
 
           {/* WhatsApp QR Code */}
+          {/* WhatsApp & Instagram QR Codes */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Join Our WhatsApp Channel</h3>
-            <div className="bg-muted p-4 rounded-lg inline-block">
-              <img src={qrCode} alt="WhatsApp QR Code" className="w-40 h-40" />
+            <h3 className="text-lg font-semibold">Join Our Community</h3>
+
+            <div className="flex gap-6">
+              {/* WhatsApp QR */}
+              <div className="bg-muted p-4 rounded-lg text-center">
+                <img src={qrCode} alt="WhatsApp QR Code" className="w-36 h-36 mx-auto" />
+                <p className="text-sm mt-2 text-muted-foreground">WhatsApp</p>
+              </div>
+
+              {/* Instagram QR */}
+              <div className="bg-muted p-4 rounded-lg text-center">
+                <img src={instaQr} alt="Instagram QR Code" className="w-36 h-36 mx-auto" />
+                <p className="text-sm mt-2 text-muted-foreground">Instagram</p>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground">Scan to connect instantly!</p>
+
+            <p className="text-sm text-muted-foreground">
+              Scan & connect instantly 🚀
+            </p>
           </div>
+
+          
         </div>
 
         {/* Social Links */}
