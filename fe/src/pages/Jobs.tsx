@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 function Jobs() {
     return (
@@ -19,6 +20,7 @@ function Jobs() {
                     </button>
                 </Link>
             </div>
+            <LiveChatWidget/>
         </div>
     );
 }

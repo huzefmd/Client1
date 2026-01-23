@@ -2,6 +2,7 @@ import { TrendingUp, Target, LineChart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 const FreeLearning = () => {
   const topics = [
@@ -111,6 +112,7 @@ const FreeLearning = () => {
       </section>
 
       <Footer />
+      <LiveChatWidget/>
     </div>
   );
 };

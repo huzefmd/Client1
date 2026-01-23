@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle,  } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 const Finance = () => {
   const financeOptions = [
@@ -160,6 +161,7 @@ const Finance = () => {
       </section>
 
       <Footer />
+      <LiveChatWidget/>
     </div>
   );
 };

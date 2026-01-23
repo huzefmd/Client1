@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 interface FormData {
     name: string;
@@ -144,7 +145,8 @@ const Contact: React.FC = () => {
                     </p>
                 )}
             </form>
-            <Footer/>
+            <Footer />
+            <LiveChatWidget/>
         </div>
     );
 };

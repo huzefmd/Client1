@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 const Shopping = () => {
   const categories = [
@@ -123,6 +124,7 @@ const Shopping = () => {
       </section>
 
       <Footer />
+      <LiveChatWidget/>
     </div>
   );
 };
