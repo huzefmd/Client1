@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloat = () => {
-    const phoneNumber = "97411 23546"; // 👈 country code + number (no +, no spaces)
+    const phoneNumber = "91+97411 23546"; // 👈 country code + number (no +, no spaces)
     const message = "Hello! I want to know more about your services.";
 
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

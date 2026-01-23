@@ -8,6 +8,7 @@ import heroBackground from "@/assets/hero-bg.jpg";
 import { Button } from "@/components/ui/button";
 import qrCode from "@/assets/qr.jpeg"
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import LiveChatWidget from "@/components/LiveChatWidget";
 
 
 const Index = () => {
@@ -152,7 +153,8 @@ const Index = () => {
       </section>
 
       <Footer />
-      <WhatsAppFloat/>
+      {/* <WhatsAppFloat /> */}
+      <LiveChatWidget/>
     </div>
   );
 };
