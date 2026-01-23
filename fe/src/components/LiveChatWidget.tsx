@@ -67,7 +67,7 @@ const LiveChatWidget = () => {
                     className="fixed bottom-6 right-6 z-50 cursor-pointer flex items-center gap-2 bg-black rounded-full shadow-lg p-2"
                 >
                     <img
-                        src="https://i.pravatar.cc/100?img=47"
+                        src="/chat.jpeg"
                         className="w-12 h-12 rounded-full"
                     />
 
