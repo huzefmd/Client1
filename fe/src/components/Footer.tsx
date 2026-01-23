@@ -51,7 +51,7 @@ const Footer = () => {
           >
             <Youtube className="h-6 w-6" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://www.facebook.com/people/Yupoosuha/61565069999830/?rdid=FGRNaA4Rk70IF0ZP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DaFp2baic%2F" className="text-muted-foreground hover:text-primary transition-colors">
             <Facebook className="h-6 w-6" />
           </a>
           <a href="https://www.instagram.com/yupoosuhafreelearning604" className="text-muted-foreground hover:text-primary transition-colors">
