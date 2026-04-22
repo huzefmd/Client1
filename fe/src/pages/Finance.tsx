@@ -8,7 +8,7 @@ import LiveChatWidget from "@/components/LiveChatWidget";
 const Finance = () => {
   const financeOptions = [
     {
-      title: "Open a free demat account",
+      title: "Zeroda free demat account",
       icon: ChartCandlestick,
       description: "Open a free demat account with Zerodha and start investing in stocks, derivatives, mutual funds, ETFs, bonds, IPOs, and more",
       features: [
@@ -17,8 +17,25 @@ const Finance = () => {
         "Access to stocks, mutual funds, IPOs, and ETFs in one platform",
         "Advanced trading tools like Kite and Console",
       ],
+
+      
       processingFee: "₹0 Account Opening Fee",
       url:"https://zerodha.com/open-account?c=OD3729"
+    },
+
+    {
+      title: "JM Financial  demat account",
+      icon: ChartCandlestick,
+      description: "Open a free demat account with Zerodha and start investing in stocks, derivatives, mutual funds, ETFs, bonds, IPOs, and more",
+      features: [
+        "₹0 charges for equity delivery",
+        "Fast & paperless online account opening",
+        "30+ years free service",
+        "55 years trusted company - Jmfinaci",
+       
+      ],
+      processingFee: "₹0 Account Opening Fee",
+      url: "https://jmfs.ltd/JMFINS/6eWFFA075D6"
     },
     {
       title: "Home Loan",
